@@ -41,6 +41,7 @@ export default function Home({
         <Link 
           key={product.id} 
           href={`/product/${product.id}`}
+          prefetch={false}
         >
           <Product className="keen-slider__slide">
             <Image src={product.imageUrl} alt="" width={520} height={480} />
